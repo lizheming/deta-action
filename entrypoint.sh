@@ -44,4 +44,7 @@ then
   SPACE_PUSH_TAG="$INPUT_VERSION"
 fi
 
+# debug
+env
+
 sh /bin/script.sh
