@@ -1,4 +1,4 @@
-FROM lizheming/drone-deta:2.0.0-alpha.6
+FROM lizheming/drone-deta:2.0.0-alpha.7
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
