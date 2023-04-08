@@ -1,0 +1,38 @@
+name: "Deta Action"
+author: "Austin Lee"
+description: "GitHub Action to deploy current repo to Deta Space"
+
+inputs:
+  access_token:
+    description: "Deta access token. https://deta.space/docs/en/basics/cli#authentication"
+    required: true
+  id:
+    description: "project id of an existing project"
+    required: true
+  tag:
+    description: "tag to identify this push"
+    required: false
+  dir:
+    description: "src of project to push (default \"./\")"
+    default: ./
+    requried: false
+  listed:
+    description: "listed on discovery"
+    required: false
+  notes:
+    description: "release notes"
+    required: false
+  rid: 
+    description: "revision id for release"
+    required: false
+  version:
+    description: "version for the release"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "upload-cloud"
+  color: "purple"
