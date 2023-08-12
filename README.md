@@ -13,6 +13,7 @@ See [action.yml](action.yml) for more detailed information.
 - `listed`: listed on discovery
 - `notes`: release notes
 - `version`: version for the release
+- `release`: set `false` if you want disable release action
 
 ## Usage
 
