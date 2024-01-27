@@ -28,6 +28,9 @@ inputs:
   version:
     description: "version for the release"
     required: false
+  release:
+    description: "set false if you just want push and don't want release action"
+    required: false
 
 runs:
   using: "docker"
